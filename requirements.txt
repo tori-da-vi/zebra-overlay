@@ -1,0 +1,4 @@
+Flask>=2.0
+numpy>=1.21,<1.23; python_version < '3.11'
+numpy>=1.23; python_version >= '3.11'
+opencv-python==4.8.0.74

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./static/uploads:/app/static/uploads  # Для сохранения загруженных файлов
+      - ./static/outputs:/app/static/outputs  # Для сохранения обработанных файлов
+    environment:
+      FLASK_ENV: development
